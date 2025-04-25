@@ -2,6 +2,8 @@
 
 ### ~ Mewujudkan Model Perpajakan yang Adil dan Terbuka dengan Smart Contract ~
 
+<img src="./images/0.png" alt="画面イメージ" width="500" />
+
 ### Pendahuluan: Apakah Anda Puas dengan "Negara" Saat Ini?
 
 "Pajak naik lagi ya...", "Gaji tidak naik-naik, tapi potongan terus bertambah...", "Apa sih yang dikerjakan politisi? Skandal lagi...", "Kenapa ya sistem ini sepertinya hanya menguntungkan segelintir orang saja?"
@@ -51,108 +53,118 @@ Jika buku ini dapat sedikit menyalakan harapan untuk masa depan, dan menjadi pem
 
 Mari kita mulai perjalanan ke "Membangun Negara Blockchain dari Nol" dengan membalik halaman.
 
+<br>
+<br>
+<br>
+
 ### Daftar Isi
 
 **Pendahuluan: Apakah Anda Puas dengan "Negara" Saat Ini?**
 
 **Bab 1: Bagaimana Sih Isi "Dompet Negara"? ~ Masalah Negara yang Ada ~**
 
--   Seperti Labirin? Atau Teka-teki? Jenis dan Perhitungan Pajak yang Terlalu Rumit
--   Ke Mana Pajak Menghilang? Penggunaan yang Seperti Kotak Hitam
--   Penghindaran Pajak, Permainan yang Tidak Adil?
--   "Uang Tersembunyi" yang Bahkan Negara Tidak Bisa Melacaknya
--   Analog? Atau Rumit Luar Biasa? Sistem Administrasi yang Ketinggalan Zaman
--   "Perbaikan" Saja Tidak Cukup? Saatnya Mengganti "OS"?
+- Seperti Labirin? Atau Teka-teki? Jenis dan Perhitungan Pajak yang Terlalu Rumit
+- Ke Mana Pajak Menghilang? Penggunaan yang Seperti Kotak Hitam
+- Penghindaran Pajak, Permainan yang Tidak Adil?
+- "Uang Tersembunyi" yang Bahkan Negara Tidak Bisa Melacaknya
+- Analog? Atau Rumit Luar Biasa? Sistem Administrasi yang Ketinggalan Zaman
+- "Perbaikan" Saja Tidak Cukup? Saatnya Mengganti "OS"?
 
 **Bab 2: Apa Itu "Blockchain", OS Negara Masa Depan?**
 
--   Dasar-Dasar Blockchain: "Buku Catatan Digital yang Tidak Bisa Diubah, Diawasi Bersama oleh Semua Orang"
--   Bukan Hanya Bitcoin! Potensi Tak Terbatas Blockchain
--   "Kekuatan Luar Biasa" Blockchain ~ Teknologi Penopang Negara Masa Depan ~
-    -   Transparansi (Transparency): Membuat Aliran Uang Terlihat Jelas
-    -   Ketahanan Terhadap Perubahan (Immutability): Tidak Mengizinkan Kecurangan atau Penipuan
-    -   Smart Contract: Program Cerdas yang Menjalankan "Janji" Secara Otomatis
--   Zero-Knowledge Proof: "Sihir" untuk Membuktikan Kebenaran Tanpa Membuka Rahasia
--   Mengapa Blockchain Membuat "Kecurangan" Tidak Mungkin?
--   Kesimpulan: Potensi sebagai "OS" Penggerak Negara
+- Dasar-Dasar Blockchain: "Buku Catatan Digital yang Tidak Bisa Diubah, Diawasi Bersama oleh Semua Orang"
+- Bukan Hanya Bitcoin! Potensi Tak Terbatas Blockchain
+- "Kekuatan Luar Biasa" Blockchain ~ Teknologi Penopang Negara Masa Depan ~
+  - Transparansi (Transparency): Membuat Aliran Uang Terlihat Jelas
+  - Ketahanan Terhadap Perubahan (Immutability): Tidak Mengizinkan Kecurangan atau Penipuan
+  - Smart Contract: Program Cerdas yang Menjalankan "Janji" Secara Otomatis
+- Zero-Knowledge Proof: "Sihir" untuk Membuktikan Kebenaran Tanpa Membuka Rahasia
+- Mengapa Blockchain Membuat "Kecurangan" Tidak Mungkin?
+- Kesimpulan: Potensi sebagai "OS" Penggerak Negara
 
 **Bab 3: Selamat Datang di Negara Baru Blockchain! ~ Mekanisme Dasar ~**
 
--   Prinsip Dasar: Ini adalah "Negara yang Dibangun dari Nol"
--   Artinya Negara Berjalan Sepenuhnya di Atas Blockchain
--   "Kartu Identitas" dan "Dompet" Baru Anda: Dompet Negara (State Wallet)
--   Tidak Perlu Khawatir Tentang Kehidupan! Infrastruktur Minimum yang Didukung AI dan Blockchain
--   Semuanya Terbuka: Pengelolaan Negara Berbasis Open Source
--   Mewujudkan "Yang Diinginkan" Bersama: Subsidi untuk Infrastruktur yang Direkomendasikan
--   Ringkasan: Kerangka Negara Baru
+- Prinsip Dasar: Ini adalah "Negara yang Dibangun dari Nol"
+- Artinya Negara Berjalan Sepenuhnya di Atas Blockchain
+- "Kartu Identitas" dan "Dompet" Baru Anda: Dompet Negara (State Wallet)
+- Tidak Perlu Khawatir Tentang Kehidupan! Infrastruktur Minimum yang Didukung AI dan Blockchain
+- Semuanya Terbuka: Pengelolaan Negara Berbasis Open Source
+- Mewujudkan "Yang Diinginkan" Bersama: Subsidi untuk Infrastruktur yang Direkomendasikan
+- Ringkasan: Kerangka Negara Baru
 
 **Bab 4: Selamat Tinggal Pajak Penghasilan & PPN! Pajak Baru "Pajak Aset Dimiliki"**
 
--   Selamat Tinggal, Pajak Penghasilan! ~ "Bekerja Seperti Dikenai Denda" Itu Aneh ~
--   Selamat Tinggal, PPN! ~ Rem yang Mendinginkan Ekonomi ~
--   Selamat Datang, "Pajak Aset Dimiliki"! ~ Beban yang Adil Sesuai Kekayaan yang Dimiliki ~
--   Mekanisme Super Sederhana! Pemungutan Otomatis dengan Smart Contract
--   Bagaimana Tarif Pajak Ditentukan? "Tarif Pajak Dinamis" yang Ditentukan Bersama
--   Bagaimana "Pajak Aset Dimiliki" Mengubah Masyarakat!
--   Tunggu Sebentar! Apakah Ada Poin yang Mengkhawatirkan?
--   Ringkasan: Mesin Ekonomi Baru
+- Selamat Tinggal, Pajak Penghasilan! ~ "Bekerja Seperti Dikenai Denda" Itu Aneh ~
+- Selamat Tinggal, PPN! ~ Rem yang Mendinginkan Ekonomi ~
+- Selamat Datang, "Pajak Aset Dimiliki"! ~ Beban yang Adil Sesuai Kekayaan yang Dimiliki ~
+- Mekanisme Super Sederhana! Pemungutan Otomatis dengan Smart Contract
+- Bagaimana Tarif Pajak Ditentukan? "Tarif Pajak Dinamis" yang Ditentukan Bersama
+- Bagaimana "Pajak Aset Dimiliki" Mengubah Masyarakat!
+- Tunggu Sebentar! Apakah Ada Poin yang Mengkhawatirkan?
+- Ringkasan: Mesin Ekonomi Baru
 
 **Bab 5: Masa Depan di Mana Uang dan Aset Anda Menjadi "Token"**
 
--   Mengapa Perlu Repot-repot "Tokenisasi"?
--   Uang dan Saham Menjadi Token "Yang Sama Semua": Dunia ERC-20
--   Rumah dan Seni Menjadi Token "Satu-satunya di Dunia": Munculnya NFT (ERC-721)
--   "Harga" NFT, Anda yang Menentukan! ~ Pengaturan Nilai Taksiran Sendiri ~
--   "Terlalu Murah" atau "Terlalu Mahal" Tidak Diizinkan! Mekanisme Pasar Negara
--   "Efek Luar Biasa" dari Mekanisme Ini
--   Ringkasan: Menuju Masa Depan di Mana Aset Bergerak Bebas
+- Mengapa Perlu Repot-repot "Tokenisasi"?
+- Uang dan Saham Menjadi Token "Yang Sama Semua": Dunia ERC-20
+- Rumah dan Seni Menjadi Token "Satu-satunya di Dunia": Munculnya NFT (ERC-721)
+- "Harga" NFT, Anda yang Menentukan! ~ Pengaturan Nilai Taksiran Sendiri ~
+- "Terlalu Murah" atau "Terlalu Mahal" Tidak Diizinkan! Mekanisme Pasar Negara
+- "Efek Luar Biasa" dari Mekanisme Ini
+- Ringkasan: Menuju Masa Depan di Mana Aset Bergerak Bebas
 
 **Bab 6: Hubungan Baru Antara Perusahaan dan Uang**
 
--   Badan Hukum Juga Beroperasi dengan "Dompet Negara": Menuju Operasional Perusahaan yang Transparan
--   Badan Hukum Juga Kena "Pajak Aset Dimiliki": Tidak Ada Aset yang Tidur
--   Pajak Lainnya: Apa Itu "Pajak Hiburan (Entertainment Tax)"?
--   Bentuk Perusahaan Baru: Laba + Kontribusi Sosial
--   Korupsi & Kolusi, Selamat Tinggal! Menuju Ekonomi yang Bersih
--   Ringkasan: Menuju Masyarakat di Mana Perusahaan Jujur Dihargai
+- Badan Hukum Juga Beroperasi dengan "Dompet Negara": Menuju Operasional Perusahaan yang Transparan
+- Badan Hukum Juga Kena "Pajak Aset Dimiliki": Tidak Ada Aset yang Tidur
+- Pajak Lainnya: Apa Itu "Pajak Hiburan (Entertainment Tax)"?
+- Bentuk Perusahaan Baru: Laba + Kontribusi Sosial
+- Korupsi & Kolusi, Selamat Tinggal! Menuju Ekonomi yang Bersih
+- Ringkasan: Menuju Masyarakat di Mana Perusahaan Jujur Dihargai
 
 **Bab 7: Saat Melintasi Perbatasan ~ Cara Terhubung dengan Masyarakat Global ~**
 
--   Prinsip: Kekayaan Dimanfaatkan di Dalam Negeri. Tapi...
--   Dunia Terhubung: Kebutuhan Uang Melintasi Perbatasan
--   Risiko: Harus Mencegah "Pelarian Modal ke Luar Negeri"
--   Penjaga Perbatasan: Sistem "Jembatan Negara (State Bridge)"
--   Keluar Negeri Dikenai "Biaya Tol": Pengenalan "Pajak Keluar"
--   Cara Terhubung yang "Cerdas" dengan Dunia
--   Ringkasan: Jalan Melindungi Kekayaan Nasional dan Terhubung dengan Dunia
+- Prinsip: Kekayaan Dimanfaatkan di Dalam Negeri. Tapi...
+- Dunia Terhubung: Kebutuhan Uang Melintasi Perbatasan
+- Risiko: Harus Mencegah "Pelarian Modal ke Luar Negeri"
+- Penjaga Perbatasan: Sistem "Jembatan Negara (State Bridge)"
+- Keluar Negeri Dikenai "Biaya Tol": Pengenalan "Pajak Keluar"
+- Cara Terhubung yang "Cerdas" dengan Dunia
+- Ringkasan: Jalan Melindungi Kekayaan Nasional dan Terhubung dengan Dunia
 
 **Bab 8: Negara Baru Blockchain Akan "Mengubah Hidup Anda Seperti Ini"!**
 
--   【Perubahan Anda ①】 Ucapkan Selamat Tinggal pada Stres Pajak!
--   【Perubahan Anda ②】 Menuju Masa Depan Tanpa Kecemasan "Apakah Bisa Makan?"
--   【Perubahan Anda ③】 "Orang Jujur Tidak Dirugikan" Akhirnya Menjadi Hal Biasa
--   【Perubahan Anda ④】 Ekonomi Menjadi Lebih Dinamis! Peluang Meluas
--   【Perubahan Anda ⑤】 "Aset" Anda Menjadi Lebih Dekat, Lebih Bebas
--   【Perubahan Anda ⑥】 Politik dan Administrasi Menjadi Lebih Dekat dan "Urusan Pribadi"
--   【Studi Kasus】 Hidup Anda Akan Berubah Seperti Ini!
--   Kesimpulan: Masa Depan Pasti Bisa Lebih Cerah!
+- 【Perubahan Anda ①】 Ucapkan Selamat Tinggal pada Stres Pajak!
+- 【Perubahan Anda ②】 Menuju Masa Depan Tanpa Kecemasan "Apakah Bisa Makan?"
+- 【Perubahan Anda ③】 "Orang Jujur Tidak Dirugikan" Akhirnya Menjadi Hal Biasa
+- 【Perubahan Anda ④】 Ekonomi Menjadi Lebih Dinamis! Peluang Meluas
+- 【Perubahan Anda ⑤】 "Aset" Anda Menjadi Lebih Dekat, Lebih Bebas
+- 【Perubahan Anda ⑥】 Politik dan Administrasi Menjadi Lebih Dekat dan "Urusan Pribadi"
+- 【Studi Kasus】 Hidup Anda Akan Berubah Seperti Ini!
+- Kesimpulan: Masa Depan Pasti Bisa Lebih Cerah!
 
 **Bab 9: Tanya Jawab Masa Depan ~ Menjawab Pertanyaan Anda ~**
 
--   Q1. Apakah blockchain benar-benar aman? Tidakkah ada kekhawatiran diretas atau sistemnya berhenti?
--   Q2. Saya paham ini akan lebih nyaman, tapi saya tetap merasa sangat keberatan jika negara mengetahui semua informasi uang dan aset saya dari segi privasi... Apakah aman?
--   Q3. Bagaimana dengan lansia yang tidak pandai mengoperasikan komputer atau smartphone, atau orang yang berada di lingkungan tanpa akses ke perangkat digital? Bagaimana mengatasi kesenjangan digital?
--   Q4. Jika pekerjaan semakin otomatis dengan AI dan smart contract, bukankah pekerjaan manusia akan hilang? Jika pengangguran melimpah, bukankah masyarakat akhirnya menjadi tidak stabil?
--   Q5. Pajak Aset Dimiliki itu kan intinya mengambil lebih banyak pajak dari orang kaya. Bukankah itu jadi "perundungan orang kaya"? Apakah orang yang membangun kekayaan dengan bakat dan kerja keras tidak dihargai? Apakah kesenjangan benar-benar akan menyempit?
--   Q6. Sejujurnya, apakah negara seperti ini benar-benar bisa terwujud? Bukankah ini hanya teori di atas kertas? Apa saja tantangannya?
--   Q7. Seandainya negara seperti ini benar-benar ada, bagaimana caranya menjadi warga negara? (*Sebagai pembicaraan konseptual*)
--   Penutup Tanya Jawab
+- Q1. Apakah blockchain benar-benar aman? Tidakkah ada kekhawatiran diretas atau sistemnya berhenti?
+- Q2. Saya paham ini akan lebih nyaman, tapi saya tetap merasa sangat keberatan jika negara mengetahui semua informasi uang dan aset saya dari segi privasi... Apakah aman?
+- Q3. Bagaimana dengan lansia yang tidak pandai mengoperasikan komputer atau smartphone, atau orang yang berada di lingkungan tanpa akses ke perangkat digital? Bagaimana mengatasi kesenjangan digital?
+- Q4. Jika pekerjaan semakin otomatis dengan AI dan smart contract, bukankah pekerjaan manusia akan hilang? Jika pengangguran melimpah, bukankah masyarakat akhirnya menjadi tidak stabil?
+- Q5. Pajak Aset Dimiliki itu kan intinya mengambil lebih banyak pajak dari orang kaya. Bukankah itu jadi "perundungan orang kaya"? Apakah orang yang membangun kekayaan dengan bakat dan kerja keras tidak dihargai? Apakah kesenjangan benar-benar akan menyempit?
+- Q6. Sejujurnya, apakah negara seperti ini benar-benar bisa terwujud? Bukankah ini hanya teori di atas kertas? Apa saja tantangannya?
+- Q7. Seandainya negara seperti ini benar-benar ada, bagaimana caranya menjadi warga negara? (_Sebagai pembicaraan konseptual_)
+- Penutup Tanya Jawab
 
 **Penutup: Memilih Masa Depan Adalah Tanggung Jawab Kita Masing-Masing**
 
 ---
 
+<br>
+<br>
+<br>
+
 ### Bab 1: Bagaimana Sih Isi "Dompet Negara"? ~ Masalah Negara yang Ada ~
+
+<img src="./images/1.png" alt="画面イメージ" width="500" />
 
 Dalam "Pendahuluan", kita menyentuh tentang rasa resah dan ketidakpuasan terhadap sistem negara saat ini. Perasaan "ada yang aneh" atau "tidak bisakah menjadi lebih baik". Perasaan itu, pasti bukan hanya Anda yang merasakannya. Di bab ini, untuk menggali lebih dalam identitas keresahan tersebut, mari kita lihat bersama bagaimana "dompet negara" yang berhubungan langsung dengan kehidupan kita, yaitu pajak dan keuangan negara, saat ini, dan masalah apa saja yang dihadapinya.
 
@@ -250,7 +262,14 @@ Mulai dari bab berikutnya, mari kita mulai mengeksplorasi potensinya.
 
 ---
 
+<br>
+<br>
+<br>
+<br>
+
 ### Bab 2: Apa Itu "Blockchain", OS Negara Masa Depan?
+
+<img src="./images/2.png" alt="画面イメージ" width="500" />
 
 Di Bab 1, kita telah melihat banyak "masalah menyebalkan" yang dihadapi oleh sistem pajak dan keuangan negara saat ini. "Terlalu rumit", "tidak terlihat", "curang", "kuno"... Rasanya hanya bisa menghela napas, ya. Tapi, mungkin masih terlalu dini untuk menyerah.
 
@@ -364,7 +383,14 @@ Mulai dari bab berikutnya, kita akan masuk ke inti buku ini: desain konkret "Neg
 
 ---
 
+<br>
+<br>
+<br>
+<br>
+
 ### Bab 3: Selamat Datang di Negara Baru Blockchain! ~ Mekanisme Dasar ~
+
+<img src="./images/3.png" alt="画面イメージ" width="500" />
 
 Baiklah, penantian Anda berakhir! Hingga bab sebelumnya, kita telah melihat masalah negara saat ini dan potensi teknologi blockchain sebagai solusinya. Mulai dari bab ini, kita akan memandu Anda ke wujud konkret negara yang sama sekali baru, yang "dibangun dari nol" dengan blockchain sebagai fondasinya.
 
@@ -472,7 +498,16 @@ Inilah desain dasar negara yang adil, transparan, efisien, dan tempat orang dapa
 
 Nah, di negara seperti ini, "pajak" akan berbentuk seperti apa? Pajak rumit yang ada sudah tidak diperlukan lagi. Di bab berikutnya, kita akan membahas secara detail mekanisme pajak yang sama sekali baru, yang menjadi inti sistem ekonomi negara ini: **"Pajak Aset Dimiliki (Holding Asset Tax)"**. Pasti, citra Anda tentang "pajak" akan berubah 180 derajat.
 
+---
+
+<br>
+<br>
+<br>
+<br>
+
 ### Bab 4: Selamat Tinggal Pajak Penghasilan & PPN! Pajak Baru "Pajak Aset Dimiliki"
+
+<img src="./images/4.png" alt="画面イメージ" width="500" />
 
 Nah, setelah kerangka dasar Negara Baru Blockchain mulai terlihat, mari kita masuk lebih dalam ke mekanisme uang dan pajak, yang bisa disebut sebagai "darah ekonomi" negara ini.
 
@@ -615,7 +650,15 @@ Di Bab 5 berikutnya, mari kita lihat secara detail kunci dari hal tersebut: **"T
 
 ---
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ### Bab 5: Masa Depan di Mana Uang dan Aset Anda Menjadi "Token"
+
+<img src="./images/5.png" alt="画面イメージ" width="500" />
 
 Di bab sebelumnya, kita melihat masa depan di mana tidak ada pajak penghasilan maupun PPN, tetapi sebagai gantinya diperkenalkan pajak baru bernama "Pajak Aset Dimiliki". Sesuai dengan jumlah aset yang dimiliki, pajak dipungut secara otomatis sedikit demi sedikit setiap hari. Mekanisme yang sederhana, adil, dan berpotensi mengaktifkan ekonomi.
 
@@ -749,7 +792,13 @@ Di Bab 6 berikutnya, kita akan membahas mekanisme badan hukum dan pajak unik ber
 
 ---
 
+<br>
+<br>
+<br>
+
 ### Bab 6: Hubungan Baru Antara Perusahaan dan Uang
+
+<img src="./images/6.png" alt="画面イメージ" width="500" />
 
 Dalam bab-bab sebelumnya, kita telah melihat bagaimana kehidupan dan aset pribadi akan berubah di Negara Baru Blockchain. Kehidupan minimum terjamin, pajak menjadi "Pajak Aset Dimiliki" yang sederhana dan adil, aset diperlakukan sebagai "token" secara bebas dan transparan... Rasanya jadi bersemangat, bukan?
 
@@ -888,7 +937,13 @@ Di Bab 7 berikutnya, mari kita lihat hubungan negara ini dengan "luar", terutama
 
 ---
 
+<br>
+<br>
+<br>
+
 ### Bab 7: Saat Melintasi Perbatasan ~ Cara Terhubung dengan Masyarakat Global ~
+
+<img src="./images/7.png" alt="画面イメージ" width="500" />
 
 Baiklah, dalam bab-bab sebelumnya, kita telah melihat secara mendalam mekanisme "internal" Negara Baru Blockchain. Bagaimana kehidupan warga negara dijamin, bagaimana aset diperlakukan, bagaimana pajak dipungut, bagaimana perusahaan dioperasikan. Apakah Anda merasakan harapan untuk masa depan dari gambaran inovatifnya?
 
@@ -998,7 +1053,13 @@ Apakah Anda sudah mulai melihat garis besar masyarakat seperti apa yang akan ter
 
 Akhirnya, di bab terakhir berikutnya (Bab 8), kita akan menjawab pertanyaan paling inti dari buku ini secara langsung sekali lagi: **"Bagaimana keseluruhan mekanisme ini akan secara konkret memperbaiki kehidupan kita?"** Mengapa masalah yang dihadapi negara-negara yang ada dapat diselesaikan di negara baru ini? Kita akan menguraikan manfaat konkretnya dari sudut pandang Anda. Nantikan!
 
+<br>
+<br>
+<br>
+
 ### Bab 8: Negara Baru Blockchain Akan "Mengubah Hidup Anda Seperti Ini"!
+
+<img src="./images/8.png" alt="画面イメージ" width="500" />
 
 Baiklah, perjalanan panjang kita akhirnya mencapai klimaks!
 Kita telah berbagi masalah yang dihadapi sistem negara saat ini di Bab 1, dan menjelajahi potensi teknologi blockchain sebagai solusinya di Bab 2. Kemudian, dari Bab 3 hingga Bab 7, kita telah melihat secara detail cetak biru negara yang sama sekali baru berbasis blockchain – jaminan infrastruktur minimum, sistem pajak baru bernama Pajak Aset Dimiliki, tokenisasi aset, bentuk baru badan hukum, dan metode pengelolaan aset melintasi perbatasan.
@@ -1112,7 +1173,13 @@ Setelah menjawab pertanyaan Anda di bab terakhir, saya ingin menutup buku ini de
 
 ---
 
+<br>
+<br>
+<br>
+
 ### Bab 9: Tanya Jawab Masa Depan ~ Menjawab Pertanyaan Anda ~
+
+<img src="./images/9.png" alt="画面イメージ" width="500" />
 
 Sampai di sini, kita telah membahas berbagai aspek Negara Baru Blockchain yang dibangun dari nol – fondasi kehidupan, sistem pajak, pengelolaan aset, bentuk perusahaan, serta perubahan cerah yang mungkin dibawanya – dengan penuh semangat. Pasti, di benak Anda, selain harapan, juga muncul banyak tanda tanya "?".
 
@@ -1244,6 +1311,10 @@ Saya akan sangat senang jika Tanya Jawab ini dapat sedikit menjawab keraguan And
 Baiklah, akhirnya di bagian "Penutup" terakhir, mari kita akhiri perjalanan panjang ini dan sampaikan pesan penuh harapan untuk masa depan.
 
 ---
+
+<br>
+<br>
+<br>
 
 ### Penutup: Memilih Masa Depan Adalah Tanggung Jawab Kita Masing-Masing
 
