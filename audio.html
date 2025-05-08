@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        padding: 20px;
+      }
+      .audio-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .audio-title {
+        margin-bottom: 20px;
+        color: #343a40;
+      }
+      .audio-player {
+        background-color: #f1f3f5;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .audio-visualization {
+        height: 60px;
+        background: linear-gradient(90deg, #4e54c8, #8f94fb);
+        border-radius: 5px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        position: relative;
+      }
+      .visualization-bars {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        padding: 0 10px;
+      }
+      .bar {
+        width: 3px;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: 0 1px;
+        border-radius: 1px;
+      }
+      .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+      .control-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s;
+      }
+      .control-btn:hover {
+        background-color: #e9ecef;
+        transform: scale(1.05);
+      }
+      .play-btn {
+        width: 50px;
+        height: 50px;
+        background-color: #4e54c8;
+        color: white;
+      }
+      .play-btn:hover {
+        background-color: #3a40a5;
+      }
+      .time-display {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        color: #6c757d;
+        font-size: 14px;
+      }
+      .progress-container {
+        position: relative;
+        margin: 10px 0;
+        height: 6px;
+        background-color: #dee2e6;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: #4e54c8;
+        border-radius: 3px;
+        transition: width 0.1s;
+      }
+      .metadata {
+        padding: 15px;
+        background-color: #e9ecef;
+        border-radius: 10px;
+        font-size: 14px;
+      }
+      .metadata-item {
+        margin-bottom: 8px;
+      }
+      .metadata-label {
+        font-weight: bold;
+        color: #495057;
+      }
+      @media (max-width: 768px) {
+        .audio-container {
+          padding: 20px;
+          margin: 20px auto;
+        }
+      }
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="audio-container">
+        <h1 class="audio-title">Audio Track</h1>
+
+        <div class="audio-player">
+          <!-- Visualization Area -->
+          <div class="audio-visualization">
+            <div class="visualization-bars" id="visualization"></div>
+          </div>
+
+          <!-- Audio Element (Hidden) -->
+          <audio id="audio-element">
+            <source
+              src="https://raw.github.com/masataka-eth/book-blockchain-nation--indonesia/main/audio.wav"
+              type="audio/wav"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <!-- Progress Bar -->
+          <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+
+          <!-- Time Display -->
+          <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+
+          <!-- Control Buttons -->
+          <div class="controls">
+            <button
+              class="control-btn"
+              id="backward-btn"
+              aria-label="Go back 15 seconds"
+            >
+              <i class="fas fa-backward-step"></i>
+            </button>
+            <button
+              class="control-btn play-btn"
+              id="play-btn"
+              aria-label="Play"
+            >
+              <i class="fas fa-play" id="play-icon"></i>
+            </button>
+            <button
+              class="control-btn"
+              id="forward-btn"
+              aria-label="Go forward 15 seconds"
+            >
+              <i class="fas fa-forward-step"></i>
+            </button>
+            <button
+              class="control-btn"
+              id="speed-btn"
+              aria-label="Playback speed"
+            >
+              <span id="speed-text">1x</span>
+            </button>
+            <button class="control-btn" id="volume-btn" aria-label="Volume">
+              <i class="fas fa-volume-up" id="volume-icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Metadata -->
+        <div class="metadata">
+          <div class="metadata-item">
+            <span class="metadata-label">Filename:</span> audio.wav
+          </div>
+          <div class="metadata-item">
+            <span class="metadata-label">Source:</span> GitHub -
+            masataka-eth/book-blockchain-nation--indonesia
+          </div>
+          <div class="metadata-item">
+            <span class="metadata-label">Format:</span> WAV
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get elements
+        const audioElement = document.getElementById("audio-element");
+        const playBtn = document.getElementById("play-btn");
+        const playIcon = document.getElementById("play-icon");
+        const backwardBtn = document.getElementById("backward-btn");
+        const forwardBtn = document.getElementById("forward-btn");
+        const speedBtn = document.getElementById("speed-btn");
+        const speedText = document.getElementById("speed-text");
+        const volumeBtn = document.getElementById("volume-btn");
+        const volumeIcon = document.getElementById("volume-icon");
+        const progressContainer = document.getElementById("progress-container");
+        const progressBar = document.getElementById("progress-bar");
+        const currentTimeEl = document.getElementById("current-time");
+        const durationEl = document.getElementById("duration");
+        const visualization = document.getElementById("visualization");
+
+        // Create visualization bars
+        for (let i = 0; i < 50; i++) {
+          const bar = document.createElement("div");
+          bar.className = "bar";
+          bar.style.height = Math.random() * 60 + "%";
+          visualization.appendChild(bar);
+        }
+
+        // Playback speed settings
+        const speeds = [0.5, 0.75, 1, 1.25, 1.5, 2];
+        let currentSpeedIndex = 2; // Initial speed is 1x
+
+        // Toggle play/pause
+        playBtn.addEventListener("click", function () {
+          if (audioElement.paused) {
+            audioElement.play();
+            playIcon.className = "fas fa-pause";
+            animateVisualization(true);
+          } else {
+            audioElement.pause();
+            playIcon.className = "fas fa-play";
+            animateVisualization(false);
+          }
+        });
+
+        // Go back 15 seconds
+        backwardBtn.addEventListener("click", function () {
+          audioElement.currentTime = Math.max(0, audioElement.currentTime - 15);
+        });
+
+        // Go forward 15 seconds
+        forwardBtn.addEventListener("click", function () {
+          audioElement.currentTime = Math.min(
+            audioElement.duration,
+            audioElement.currentTime + 15
+          );
+        });
+
+        // Change playback speed
+        speedBtn.addEventListener("click", function () {
+          currentSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+          const newSpeed = speeds[currentSpeedIndex];
+          audioElement.playbackRate = newSpeed;
+          speedText.textContent = newSpeed + "x";
+        });
+
+        // Toggle mute
+        volumeBtn.addEventListener("click", function () {
+          audioElement.muted = !audioElement.muted;
+          if (audioElement.muted) {
+            volumeIcon.className = "fas fa-volume-mute";
+          } else {
+            volumeIcon.className = "fas fa-volume-up";
+          }
+        });
+
+        // Update progress bar
+        audioElement.addEventListener("timeupdate", function () {
+          // Update time display
+          const currentTime = formatTime(audioElement.currentTime);
+          const duration = formatTime(audioElement.duration);
+          currentTimeEl.textContent = currentTime;
+          durationEl.textContent = duration;
+
+          // Update progress bar
+          const progressPercent =
+            (audioElement.currentTime / audioElement.duration) * 100;
+          progressBar.style.width = progressPercent + "%";
+        });
+
+        // Click on progress bar
+        progressContainer.addEventListener("click", function (e) {
+          const progressWidth = this.clientWidth;
+          const clickX = e.offsetX;
+          const duration = audioElement.duration;
+          audioElement.currentTime = (clickX / progressWidth) * duration;
+        });
+
+        // When playback ends
+        audioElement.addEventListener("ended", function () {
+          playIcon.className = "fas fa-play";
+          progressBar.style.width = "0%";
+          animateVisualization(false);
+        });
+
+        // Format time function
+        function formatTime(seconds) {
+          if (isNaN(seconds)) return "0:00";
+
+          const minutes = Math.floor(seconds / 60);
+          const secs = Math.floor(seconds % 60);
+          return minutes + ":" + (secs < 10 ? "0" : "") + secs;
+        }
+
+        // Visualization animation
+        function animateVisualization(isPlaying) {
+          const bars = visualization.querySelectorAll(".bar");
+          if (isPlaying) {
+            const animate = () => {
+              if (!audioElement.paused) {
+                bars.forEach((bar) => {
+                  bar.style.height = Math.random() * 60 + "%";
+                });
+                requestAnimationFrame(animate);
+              }
+            };
+            requestAnimationFrame(animate);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
